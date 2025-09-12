@@ -44,15 +44,13 @@ export default function ReminderBot() {
                   <ContributionCard
                     icon="⚙️"
                     title="Backend API"
-                    isList={true}
-                    listItems={["Built <strong className='text-white'>Flask endpoints backed by MongoDB</strong> for fast writes/reads and smooth reminder retrieval"]}
+                    description="Built <strong className='text-white'>Flask endpoints backed by MongoDB</strong> for fast writes/reads and smooth reminder retrieval, ensuring reliable data persistence and quick response times."
                   />
 
                   <ContributionCard
                     icon="🚀"
                     title="Deployment"
-                    isList={true}
-                    listItems={["Set up <strong className='text-white'>Render deploys with CI/CD</strong> for repeatable releases and higher reliability with less manual effort"]}
+                    description="Set up <strong className='text-white'>Render deploys with CI/CD</strong> for repeatable releases and higher reliability with less manual effort, automating the deployment pipeline for consistent updates."
                   />
                 </div>
               </div>

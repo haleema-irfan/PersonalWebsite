@@ -45,7 +45,7 @@ export default function ProjectCard({
   return (
     <div className={`fade-down ${delay}`}>
       {/* Main card container with gradient background and hover effects */}
-      <div className="bg-gradient-to-br from-[#3C414A]/40 to-[#3C414A]/20 rounded-3xl p-8 border border-gray-700/20 hover:border-[#B3EBF2]/30 transition-all duration-300 hover:scale-105 h-full">
+      <div className="bg-gradient-to-br from-[#3C414A]/40 to-[#3C414A]/20 rounded-3xl p-8 border border-gray-700/20 hover:border-[#B3EBF2]/30 transition-all duration-300 hover:scale-105">
         
         {/* Project header with icon and basic info */}
         <div className="flex items-center gap-4 mb-6">

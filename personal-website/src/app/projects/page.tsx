@@ -23,6 +23,17 @@ export default function Projects() {
           {/* Projects Grid */}
           <div className="grid lg:grid-cols-2 gap-8">
             <ProjectCard
+              title="NUS Datathon 2025"
+              type="Machine Learning Project"
+              period="Jan 2025"
+              description="Engineered <strong className='text-white'>business-metric features</strong>, performed <strong className='text-white'>feature selection</strong>, and implemented a <strong className='text-white'>Random Forest Classifier</strong> with scikit-learn.<br /><br />Achieved <strong className='text-white'>82% accuracy (Global) and 80% accuracy (Domestic)</strong>, improving classification reliability and interpretability."
+              technologies={["Python", "pandas", "scikit-learn", "matplotlib"]}
+              icon="🤖"
+              link="/projects/nus-datathon"
+              delay="fade-down-delay-1"
+            />
+
+            <ProjectCard
               title="Campus Connect"
               type="Mobile Application"
               period="Jun 2024 - Aug 2024"
@@ -30,7 +41,7 @@ export default function Projects() {
               technologies={["Express.js", "PostgreSQL", "React Native", "Tailwind CSS"]}
               icon="📱"
               link="/projects/campus-connect"
-              delay="fade-down-delay-1"
+              delay="fade-down-delay-2"
             />
 
             <ProjectCard
@@ -41,7 +52,7 @@ export default function Projects() {
               technologies={["Flask", "Python", "MongoDB", "Render"]}
               icon="🤖"
               link="/projects/reminder-bot"
-              delay="fade-down-delay-2"
+              delay="fade-down-delay-3"
             />
           </div>
         </div>

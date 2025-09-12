@@ -32,6 +32,3 @@ I built this portfolio to create a **professional, reliable, and maintainable pl
 - **SEO-friendly** with server-side rendering  
 - **CI/CD pipeline** → automatic deploys on every commit  
 
----
-
-## Project Structure  

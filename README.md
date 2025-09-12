@@ -13,7 +13,7 @@ A modern, responsive portfolio built with **Next.js** and **Tailwind CSS**. Desi
 I built this portfolio to create a **professional, reliable, and maintainable platform** that not only highlights my work but also demonstrates my ability to engineer real-world, production-ready applications.  
 
 - Static resumes and outdated READMEs weren’t engaging → I needed an **interactive showcase**.  
-- I wanted to explore **Next.js navigation, reusable components, and DevOps practices** like CI/CD and custom domains.  
+- I wanted to explore **Next.js navigation, reusable components, and DevOps practices**.  
 - The site had to **load fast, and be easy to update** as my projects evolve.  
 
 ---

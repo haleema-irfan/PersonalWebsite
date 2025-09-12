@@ -1,31 +1,20 @@
 "use client";
 
-import Link from "next/link";
+import Navigation from "@/components/Navigation";
+import BackgroundElements from "@/components/BackgroundElements";
+import ChallengeCard from "@/components/ChallengeCard";
+import ContributionCard from "@/components/ContributionCard";
+import GitHubLink from "@/components/GitHubLink";
+import BackLink from "@/components/BackLink";
 
 export default function CampusConnect() {
   return (
     <div className="min-h-screen bg-[#1A202C] text-white">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#1A202C]/95 backdrop-blur-sm border-b border-gray-800/50">
-        <div className="flex justify-center items-center py-4">
-          <div className="flex gap-12 text-lg font-bold text-gray-300">
-            <Link href="/" className="nav-link hover:text-[#B3EBF2] transition-all duration-300 hover:scale-105">Home</Link>
-            <Link href="/work" className="nav-link hover:text-[#B3EBF2] transition-all duration-300 hover:scale-105">Work Experience</Link>
-            <Link href="/projects" className="nav-link hover:text-[#B3EBF2] transition-all duration-300 hover:scale-105">Projects</Link>
-            <Link href="/skills" className="nav-link hover:text-[#B3EBF2] transition-all duration-300 hover:scale-105">Skills</Link>
-            <Link href="/contact" className="nav-link hover:text-[#B3EBF2] transition-all duration-300 hover:scale-105">Contact Me</Link>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* Campus Connect Detail Section */}
       <section className="pt-24 pb-16 px-8 relative">
-        {/* Background Elements */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-20 right-10 w-32 h-32 bg-[#B3EBF2]/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 left-10 w-40 h-40 bg-[#3C414A]/20 rounded-full blur-3xl"></div>
-          <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-[#B3EBF2]/5 rounded-full blur-2xl"></div>
-        </div>
+        <BackgroundElements />
 
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-16">
@@ -39,20 +28,10 @@ export default function CampusConnect() {
             {/* Left Column - Context */}
             <div className="fade-down fade-down-delay-1 space-y-8">
               {/* The Challenge */}
-              <div className="bg-gradient-to-br from-[#3C414A]/40 to-[#3C414A]/20 rounded-2xl p-6 border border-gray-700/20 hover:border-[#B3EBF2]/30 transition-all duration-300">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#B3EBF2]/30 to-[#B3EBF2]/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <span className="text-[#B3EBF2] text-lg">🎯</span>
-                  </div>
-                  <div>
-                    <h2 className="text-xl font-bold text-white mb-3">The Challenge</h2>
-                          <p className="text-gray-300 leading-relaxed">
-                            Students lacked a <strong className="text-white">centralised space</strong> for academic and personal guidance. 
-                            Conversations were <strong className="text-white">scattered and slow</strong>, making it difficult to get timely support and connect with peers.
-                          </p>
-                  </div>
-                </div>
-              </div>
+              <ChallengeCard
+                title="The Challenge"
+                description="Students lacked a <strong className='text-white'>centralised space</strong> for academic and personal guidance. Conversations were <strong className='text-white'>scattered and slow</strong>, making it difficult to get timely support and connect with peers."
+              />
 
             </div>
 
@@ -62,61 +41,29 @@ export default function CampusConnect() {
                 <h2 className="text-2xl font-bold text-white mb-8 text-center">My Contributions</h2>
 
                 <div className="grid gap-6">
-                  {/* APIs & Data */}
-                  <div className="bg-[#1A202C]/50 rounded-xl p-6 border border-gray-700/30">
-                    <h3 className="text-lg font-bold text-white mb-3 flex items-center gap-3">
-                      <span className="w-8 h-8 bg-[#B3EBF2]/20 rounded-lg flex items-center justify-center">
-                        <span className="text-[#B3EBF2] text-sm">🔗</span>
-                      </span>
-                      APIs & Data
-                    </h3>
-                    <p className="text-gray-300 text-sm">
-                      Built <strong className="text-white">RESTful endpoints</strong> in Express and designed a <strong className="text-white">PostgreSQL schema</strong> hosted on Supabase, 
-                      resulting in more reliable data flow and scalable storage.
-                    </p>
-                  </div>
+                  <ContributionCard
+                    icon="🔗"
+                    title="APIs & Data"
+                    description="Built <strong className='text-white'>RESTful endpoints</strong> in Express and designed a <strong className='text-white'>PostgreSQL schema</strong> hosted on Supabase, resulting in more reliable data flow and scalable storage."
+                  />
 
-                  {/* Mobile UX */}
-                  <div className="bg-[#1A202C]/50 rounded-xl p-6 border border-gray-700/30">
-                    <h3 className="text-lg font-bold text-white mb-3 flex items-center gap-3">
-                      <span className="w-8 h-8 bg-[#B3EBF2]/20 rounded-lg flex items-center justify-center">
-                        <span className="text-[#B3EBF2] text-sm">📱</span>
-                      </span>
-                      Mobile UX
-                    </h3>
-                    <p className="text-gray-300 text-sm">
-                      Implemented <strong className="text-white">React Native interfaces</strong> styled with Tailwind, 
-                      improving user experience and creating a more intuitive interface on iOS/Android.
-                    </p>
-                  </div>
+                  <ContributionCard
+                    icon="📱"
+                    title="Mobile UX"
+                    description="Implemented <strong className='text-white'>React Native interfaces</strong> styled with Tailwind, improving user experience and creating a more intuitive interface on iOS/Android."
+                  />
 
-                  {/* Real-time Comms */}
-                  <div className="bg-[#1A202C]/50 rounded-xl p-6 border border-gray-700/30">
-                    <h3 className="text-lg font-bold text-white mb-3 flex items-center gap-3">
-                      <span className="w-8 h-8 bg-[#B3EBF2]/20 rounded-lg flex items-center justify-center">
-                        <span className="text-[#B3EBF2] text-sm">💬</span>
-                      </span>
-                      Real-time Comms
-                    </h3>
-                    <p className="text-gray-300 text-sm">
-                      Implemented <strong className="text-white">real-time chat with WebSockets</strong>, 
-                      enabling instant peer-to-peer messaging creating a more interactive experience.
-                    </p>
-                  </div>
+                  <ContributionCard
+                    icon="💬"
+                    title="Real-time Comms"
+                    description="Implemented <strong className='text-white'>real-time chat with WebSockets</strong>, enabling instant peer-to-peer messaging creating a more interactive experience."
+                  />
 
-                  {/* Personalisation */}
-                  <div className="bg-[#1A202C]/50 rounded-xl p-6 border border-gray-700/30">
-                    <h3 className="text-lg font-bold text-white mb-3 flex items-center gap-3">
-                      <span className="w-8 h-8 bg-[#B3EBF2]/20 rounded-lg flex items-center justify-center">
-                        <span className="text-[#B3EBF2] text-sm">🎯</span>
-                      </span>
-                      Personalisation
-                    </h3>
-                    <p className="text-gray-300 text-sm">
-                      Prototyped a <strong className="text-white">memory-based collaborative filtering feed</strong>, 
-                      delivering more relevant recommendations that boosts user engagement.
-                    </p>
-                  </div>
+                  <ContributionCard
+                    icon="🎯"
+                    title="Personalisation"
+                    description="Prototyped a <strong className='text-white'>memory-based collaborative filtering feed</strong>, delivering more relevant recommendations that boosts user engagement."
+                  />
                 </div>
               </div>
             </div>
@@ -142,12 +89,13 @@ export default function CampusConnect() {
             </div>
           </div>
 
-          {/* Back to Projects */}
-          <div className="text-center pt-12">
-            <Link href="/projects" className="inline-flex items-center gap-2 nav-link text-lg text-white hover:text-[#B3EBF2] transition-colors">
-              ← Back to Projects
-            </Link>
+          {/* GitHub Link */}
+          <div className="text-center pt-8">
+            <GitHubLink url="https://github.com/haleemairfan/CampusConnect" />
           </div>
+
+          {/* Back to Projects */}
+          <BackLink href="/projects" text="Back to Projects" className="pt-4" />
         </div>
       </section>
     </div>

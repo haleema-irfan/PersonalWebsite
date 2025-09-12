@@ -193,6 +193,8 @@ export default function Domus() {
                       <Image
                         src="/domus_dashboard_screenshot.jpg"
                         alt="Dashboard"
+                        width={200}
+                        height={150}
                         className="w-full h-auto rounded"
                       />
                     </div>
@@ -204,6 +206,8 @@ export default function Domus() {
                       <Image
                         src="/domus_function_hall_booking.jpg"
                         alt="Facility Booking"
+                        width={200}
+                        height={150}
                         className="w-full h-auto rounded"
                       />
                     </div>
@@ -215,6 +219,8 @@ export default function Domus() {
                       <Image
                         src="/domus_access_pass_qr.jpg"
                         alt="Access Pass"
+                        width={200}
+                        height={150}
                         className="w-full h-auto rounded"
                       />
                     </div>
@@ -226,6 +232,8 @@ export default function Domus() {
                       <Image
                         src="/domus_management_request.jpg"
                         alt="Management Request"
+                        width={200}
+                        height={150}
                         className="w-full h-auto rounded"
                       />
                     </div>
@@ -237,6 +245,8 @@ export default function Domus() {
                       <Image
                         src="/domus_community_forum.jpg"
                         alt="Community Forum"
+                        width={200}
+                        height={150}
                         className="w-full h-auto rounded"
                       />
                     </div>
@@ -248,6 +258,8 @@ export default function Domus() {
                       <Image
                         src="/domus_marketplace.jpg"
                         alt="Marketplace"
+                        width={200}
+                        height={150}
                         className="w-full h-auto rounded"
                       />
                     </div>

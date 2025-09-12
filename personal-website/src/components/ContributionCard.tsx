@@ -7,8 +7,8 @@ interface ContributionCardProps {
   icon: string;
   /** Title of the contribution */
   title: string;
-  /** HTML description of the contribution */
-  description: string;
+  /** HTML description of the contribution (optional when using isList) */
+  description?: string;
   /** Whether to display as a list instead of paragraph */
   isList?: boolean;
   /** Array of list items (used when isList is true) */
@@ -53,7 +53,7 @@ export default function ContributionCard({
           ))}
         </ul>
       ) : (
-        <p className="text-gray-300 text-sm" dangerouslySetInnerHTML={{ __html: description }} />
+        <p className="text-gray-300 text-sm" dangerouslySetInnerHTML={{ __html: description || '' }} />
       )}
     </div>
   );

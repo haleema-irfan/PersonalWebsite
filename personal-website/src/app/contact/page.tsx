@@ -31,8 +31,8 @@ export default function Contact() {
               Get In Touch
             </h1>
             <p className="fade-down fade-down-delay-1 text-xl text-gray-300 max-w-2xl mx-auto">
-              I'm always interested in new opportunities and collaborations. 
-              Let's connect and discuss how we can work together!
+              {"I'm"} always interested in new opportunities and collaborations. 
+              {"Let's"} connect and discuss how we can work together!
             </p>
           </div>
           

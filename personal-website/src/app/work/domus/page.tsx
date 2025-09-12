@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Domus() {
@@ -189,7 +190,7 @@ export default function Domus() {
                 <div className="grid grid-cols-3 gap-2">
                   <div className="text-center">
                     <div className="bg-white rounded-lg p-1 mb-1 shadow-sm">
-                      <img
+                      <Image
                         src="/domus_dashboard_screenshot.jpg"
                         alt="Dashboard"
                         className="w-full h-auto rounded"
@@ -200,7 +201,7 @@ export default function Domus() {
 
                   <div className="text-center">
                     <div className="bg-white rounded-lg p-1 mb-1 shadow-sm">
-                      <img
+                      <Image
                         src="/domus_function_hall_booking.jpg"
                         alt="Facility Booking"
                         className="w-full h-auto rounded"
@@ -211,7 +212,7 @@ export default function Domus() {
 
                   <div className="text-center">
                     <div className="bg-white rounded-lg p-1 mb-1 shadow-sm">
-                      <img
+                      <Image
                         src="/domus_access_pass_qr.jpg"
                         alt="Access Pass"
                         className="w-full h-auto rounded"
@@ -222,7 +223,7 @@ export default function Domus() {
 
                   <div className="text-center">
                     <div className="bg-white rounded-lg p-1 mb-1 shadow-sm">
-                      <img
+                      <Image
                         src="/domus_management_request.jpg"
                         alt="Management Request"
                         className="w-full h-auto rounded"
@@ -233,7 +234,7 @@ export default function Domus() {
 
                   <div className="text-center">
                     <div className="bg-white rounded-lg p-1 mb-1 shadow-sm">
-                      <img
+                      <Image
                         src="/domus_community_forum.jpg"
                         alt="Community Forum"
                         className="w-full h-auto rounded"
@@ -244,7 +245,7 @@ export default function Domus() {
 
                   <div className="text-center">
                     <div className="bg-white rounded-lg p-1 mb-1 shadow-sm">
-                      <img
+                      <Image
                         src="/domus_marketplace.jpg"
                         alt="Marketplace"
                         className="w-full h-auto rounded"

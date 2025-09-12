@@ -25,18 +25,18 @@ export default function Home() {
             {/* Left Column - Text */}
             <div className="text-left">
               <h1 className="fade-down text-5xl lg:text-7xl font-bold mb-6 leading-tight">
-                Hi, I'm <span className="text-[#B3EBF2]">Haleema!</span>
+                {"Hi, I'm"} <span className="text-[#B3EBF2]">{"Haleema!"}</span>
               </h1>
               <p className="fade-down fade-down-delay-1 text-xl text-gray-300 mb-8 leading-relaxed">
                 Transforming real-world challenges into scalable and user-centric software solutions
               </p>
               <div className="fade-down fade-down-delay-2 flex gap-4 flex-wrap">
-                <button className="bg-[#B3EBF2] text-[#1A202C] px-8 py-4 rounded-full font-semibold hover:bg-transparent hover:text-[#B3EBF2] hover:border-2 hover:border-[#B3EBF2] transition-all duration-300 transform hover:scale-105">
-                  Contact Me
-                </button>
-                <button className="border-2 border-[#B3EBF2] text-[#B3EBF2] px-8 py-4 rounded-full font-semibold hover:bg-[#B3EBF2] hover:text-[#1A202C] transition-all duration-300 transform hover:scale-105">
-                  View My Work
-                </button>
+                <Link href="/contact" className="bg-[#B3EBF2] text-[#1A202C] px-8 py-4 rounded-full font-semibold hover:bg-transparent hover:text-[#B3EBF2] hover:border-2 hover:border-[#B3EBF2] transition-all duration-300 transform hover:scale-105">
+                  {"Contact Me"}
+                </Link>
+                <Link href="/work" className="border-2 border-[#B3EBF2] text-[#B3EBF2] px-8 py-4 rounded-full font-semibold hover:bg-[#B3EBF2] hover:text-[#1A202C] transition-all duration-300 transform hover:scale-105">
+                  {"View My Work"}
+                </Link>
               </div>
             </div>
             

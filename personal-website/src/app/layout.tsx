@@ -9,7 +9,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Haleema - Full-Stack Developer",
+  title: "Haleema's Portfolio",
   description: "Transforming real-world challenges into scalable and user-centric software solutions",
 };
 

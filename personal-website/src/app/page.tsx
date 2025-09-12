@@ -15,7 +15,7 @@ export default function Home() {
             {/* Left Column - Text */}
             <div className="text-left">
               <h1 className="fade-down text-5xl lg:text-7xl font-bold mb-6 leading-tight">
-                Hi, I'm <span className="text-[#B3EBF2]">Haleema!</span>
+                {"Hi, I'm"} <span className="text-[#B3EBF2]">Haleema!</span>
               </h1>
               <p className="fade-down fade-down-delay-1 text-xl text-gray-300 mb-8 leading-relaxed">
                 Transforming real-world challenges into scalable and user-centric software solutions

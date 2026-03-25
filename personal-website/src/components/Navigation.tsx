@@ -23,6 +23,9 @@ export default function Navigation() {
           <Link href="/work" className="nav-link hover:text-[#B3EBF2] transition-all duration-300 hover:scale-105">
             Work Experience
           </Link>
+            <Link href="/ctfs" className="nav-link hover:text-[#B3EBF2] transition-all duration-300 hover:scale-105">
+              CTFs
+            </Link>
           <Link href="/projects" className="nav-link hover:text-[#B3EBF2] transition-all duration-300 hover:scale-105">
             Projects
           </Link>

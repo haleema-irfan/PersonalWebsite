@@ -11,6 +11,7 @@ export default function Work() {
           <div className="flex gap-12 text-lg font-bold text-gray-300">
             <Link href="/" className="nav-link hover:text-[#B3EBF2] transition-all duration-300 hover:scale-105">Home</Link>
             <Link href="/work" className="nav-link hover:text-[#B3EBF2] transition-all duration-300 hover:scale-105">Work Experience</Link>
+            <Link href="/ctfs" className="nav-link hover:text-[#B3EBF2] transition-all duration-300 hover:scale-105">CTFs</Link>
             <Link href="/projects" className="nav-link hover:text-[#B3EBF2] transition-all duration-300 hover:scale-105">Projects</Link>
             <Link href="/skills" className="nav-link hover:text-[#B3EBF2] transition-all duration-300 hover:scale-105">Skills</Link>
             <Link href="/contact" className="nav-link hover:text-[#B3EBF2] transition-all duration-300 hover:scale-105">Contact Me</Link>
@@ -35,7 +36,108 @@ export default function Work() {
           </div>
           
           {/* Work Experience Grid */}
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div id="synapxe" className="grid lg:grid-cols-3 gap-8 scroll-mt-32">
+            {/* Left Column - Company Info */}
+            <div className="fade-down fade-down-delay-1 lg:col-span-1">
+              <div className="sticky top-32">
+                <div className="bg-gradient-to-br from-[#3C414A]/50 to-[#3C414A]/30 rounded-3xl p-8 backdrop-blur-sm border border-gray-700/30">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-[#B3EBF2]/30 to-[#B3EBF2]/10 rounded-2xl flex items-center justify-center">
+                      <span className="text-2xl">🏥</span>
+                    </div>
+                    <div>
+                      <h2 className="text-2xl font-bold text-white">Synapxe</h2>
+                      <p className="text-[#B3EBF2] text-sm">National HealthTech Agency of Singapore</p>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <div>
+                      <h3 className="text-lg font-semibold text-white mb-2">Role</h3>
+                      <p className="text-gray-300">Engineering Ops Intern</p>
+                    </div>
+                    
+                    <div>
+                      <h3 className="text-lg font-semibold text-white mb-3">Tools</h3>
+                      <div className="flex flex-wrap gap-2">
+                        <span className="px-3 py-1 bg-[#B3EBF2]/20 text-[#B3EBF2] rounded-full text-sm">AWS S3</span>
+                        <span className="px-3 py-1 bg-[#B3EBF2]/20 text-[#B3EBF2] rounded-full text-sm">Bash</span>
+                        <span className="px-3 py-1 bg-[#B3EBF2]/20 text-[#B3EBF2] rounded-full text-sm">Outlook</span>
+                        <span className="px-3 py-1 bg-[#B3EBF2]/20 text-[#B3EBF2] rounded-full text-sm">Excel VBA</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column - Achievements */}
+            <div className="fade-down fade-down-delay-2 lg:col-span-2">
+              <div className="space-y-6">
+                <h3 className="text-2xl font-bold text-white mb-6">Key Achievements</h3>
+                
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="bg-gradient-to-br from-[#3C414A]/40 to-[#3C414A]/20 rounded-2xl p-6 border border-gray-700/20 hover:border-[#B3EBF2]/30 transition-all duration-300 hover:scale-105">
+                    <div className="flex items-start gap-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-[#B3EBF2]/30 to-[#B3EBF2]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <span className="text-[#B3EBF2] text-lg">🧩</span>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-white mb-2">UAM Pipeline Redesign</h4>
+                        <p className="text-gray-300 text-sm leading-relaxed">Consolidated fragmented per-application macros into a <strong className="text-white">unified 3-step configurable workflow</strong>.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-gradient-to-br from-[#3C414A]/40 to-[#3C414A]/20 rounded-2xl p-6 border border-gray-700/20 hover:border-[#B3EBF2]/30 transition-all duration-300 hover:scale-105">
+                    <div className="flex items-start gap-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-[#B3EBF2]/30 to-[#B3EBF2]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <span className="text-[#B3EBF2] text-lg">📨</span>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-white mb-2">Onboarding Automation</h4>
+                        <p className="text-gray-300 text-sm leading-relaxed">Eliminated manual email data entry by building a parser that <strong className="text-white">traverses Outlook threads</strong> and <strong className="text-white">auto-populates Excel</strong>.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-gradient-to-br from-[#3C414A]/40 to-[#3C414A]/20 rounded-2xl p-6 border border-gray-700/20 hover:border-[#B3EBF2]/30 transition-all duration-300 hover:scale-105 md:col-span-2">
+                    <div className="flex items-start gap-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-[#B3EBF2]/30 to-[#B3EBF2]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <span className="text-[#B3EBF2] text-lg">☁️</span>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-white mb-2">AWS File Transfer Automation</h4>
+                        <p className="text-gray-300 text-sm leading-relaxed">Automated bulk S3 file movements with <strong className="text-white">Bash</strong>, with <strong className="text-white">spooled logging</strong> for auditability.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="pt-6">
+                  <a href="/work/synapxe" className="inline-flex items-center gap-2 nav-link text-lg text-white hover:text-[#B3EBF2] transition-colors">
+                    Read More
+                    <span className="text-[#B3EBF2]">→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="pt-10 flex justify-center">
+            <a
+              href="#domus"
+              className="group inline-flex flex-col items-center gap-2 text-gray-300 hover:text-[#B3EBF2] transition-colors"
+            >
+              <span className="text-sm tracking-wide">More experience</span>
+              <span className="text-[#B3EBF2] text-xl transition-transform duration-300 group-hover:translate-y-1 animate-bounce">
+                ↓
+              </span>
+            </a>
+          </div>
+
+          {/* Domus */}
+          <div id="domus" className="grid lg:grid-cols-3 gap-8 mt-16 pt-16 border-t border-gray-800/50 scroll-mt-32">
             {/* Left Column - Company Info */}
             <div className="fade-down fade-down-delay-1 lg:col-span-1">
               <div className="sticky top-32">
@@ -49,13 +151,13 @@ export default function Work() {
                       <p className="text-[#B3EBF2] text-sm">Mobile Application</p>
                     </div>
                   </div>
-                  
+
                   <div className="space-y-4">
                     <div>
                       <h3 className="text-lg font-semibold text-white mb-2">Role</h3>
                       <p className="text-gray-300">Full-Stack Developer</p>
                     </div>
-                    
+
                     <div>
                       <h3 className="text-lg font-semibold text-white mb-3">Tech Stack</h3>
                       <div className="flex flex-wrap gap-2">
@@ -74,7 +176,7 @@ export default function Work() {
             <div className="fade-down fade-down-delay-2 lg:col-span-2">
               <div className="space-y-6">
                 <h3 className="text-2xl font-bold text-white mb-6">Key Achievements</h3>
-                
+
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-gradient-to-br from-[#3C414A]/40 to-[#3C414A]/20 rounded-2xl p-6 border border-gray-700/20 hover:border-[#B3EBF2]/30 transition-all duration-300 hover:scale-105">
                     <div className="flex items-start gap-4">

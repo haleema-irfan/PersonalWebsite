@@ -9,6 +9,7 @@ export default function Contact() {
           <div className="flex gap-12 text-lg font-bold text-gray-300">
             <Link href="/" className="nav-link hover:text-[#B3EBF2] transition-all duration-300 hover:scale-105">Home</Link>
             <Link href="/work" className="nav-link hover:text-[#B3EBF2] transition-all duration-300 hover:scale-105">Work Experience</Link>
+            <Link href="/ctfs" className="nav-link hover:text-[#B3EBF2] transition-all duration-300 hover:scale-105">CTFs</Link>
             <Link href="/projects" className="nav-link hover:text-[#B3EBF2] transition-all duration-300 hover:scale-105">Projects</Link>
             <Link href="/skills" className="nav-link hover:text-[#B3EBF2] transition-all duration-300 hover:scale-105">Skills</Link>
             <Link href="/contact" className="nav-link hover:text-[#B3EBF2] transition-all duration-300 hover:scale-105">Contact Me</Link>
@@ -81,6 +82,20 @@ export default function Contact() {
                 </a>
               </div>
             </div>
+          </div>
+
+          {/* Resume */}
+          <div className="fade-down fade-down-delay-4 flex justify-center">
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-[#B3EBF2]/20 to-[#B3EBF2]/10 border border-gray-700/30 hover:border-[#B3EBF2]/40 transition-all duration-300 hover:scale-105 text-white"
+            >
+              <span className="text-xl">📄</span>
+              <span className="text-lg font-semibold">View / Download Resume</span>
+              <span className="text-[#B3EBF2]">→</span>
+            </a>
           </div>
 
         </div>

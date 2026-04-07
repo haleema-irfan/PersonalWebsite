@@ -66,7 +66,7 @@ export default function Synapxe() {
           </div>
 
           {/* My Role */}
-          <div className="fade-down fade-down-delay-1 max-w-4xl mx-auto mb-12">
+          <div className="fade-down fade-down-delay-1 max-w-5xl mx-auto mb-12">
             <div className="bg-gradient-to-br from-[#3C414A]/40 to-[#3C414A]/20 rounded-2xl p-6 border border-gray-700/20 hover:border-[#B3EBF2]/30 transition-all duration-300">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-gradient-to-br from-[#B3EBF2]/30 to-[#B3EBF2]/10 rounded-xl flex items-center justify-center flex-shrink-0">
@@ -75,19 +75,19 @@ export default function Synapxe() {
                 <div>
                   <h2 className="text-xl font-bold text-white mb-3">My Role</h2>
                   <p className="text-gray-300 leading-relaxed">
-                    As an Engineering Operations Intern during Synapxe&apos;s shift from on-premise to cloud,
-                    my role was to automate manual internal workflows for the new system.
+                    As an Engineering Operations Intern at Synapxe, I supported internal
+                    operational workflows during the organisation&apos;s transition from on premises
+                    systems to the new HEALIX cloud platform. My work focused on reducing manual
+                    effort, improving maintainability, and building internal tools that made
+                    operational processes easier for users to run and update.
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Content Grid */}
           <div className="grid lg:grid-cols-2 gap-12 items-start">
-            {/* Left Column - Challenges + Role */}
-            <div className="fade-down fade-down-delay-1 space-y-8">
-              {/* Challenges */}
+            <div className="fade-down fade-down-delay-1">
               <div className="bg-gradient-to-br from-[#3C414A]/40 to-[#3C414A]/20 rounded-2xl p-8 border border-gray-700/20">
                 <h2 className="text-2xl font-bold text-white mb-8 text-center">The Challenges</h2>
 
@@ -100,10 +100,11 @@ export default function Synapxe() {
                       UAM Generation
                     </h3>
                     <p className="text-gray-300 text-sm leading-relaxed">
-                      UAM generation was fragmented — a separate macro per application with largely
-                      duplicated logic, each run individually before manually merging and splitting outputs
-                      per client. The shift to cloud also introduced new field requirements the old system
-                      couldn’t handle.
+                      The existing UAM generation process was fragmented and difficult to maintain.
+                      Standard UAM outputs had to be generated separately for each application,
+                      manually merged, and then split again by client. In addition, routine
+                      changes such as updating mappings or output fields often required direct
+                      edits to macro code, which made the workflow harder for users to manage.
                     </p>
                   </div>
 
@@ -112,12 +113,14 @@ export default function Synapxe() {
                       <span className="w-8 h-8 bg-[#B3EBF2]/20 rounded-lg flex items-center justify-center">
                         <span className="text-[#B3EBF2] text-sm">2</span>
                       </span>
-                      Onboarding Data
+                      Onboarding Data Consolidation
                     </h3>
                     <p className="text-gray-300 text-sm leading-relaxed">
-                      User onboarding data was tracked by manually reading through emails and keying
-                      information into Excel one by one — time-consuming and error-prone as the cloud
-                      system scaled up.
+                      Onboarding information for the new cloud platform was submitted through
+                      FormSG and delivered through email, with some submissions containing
+                      multiple users. Consolidating this information manually into a master user
+                      list was repetitive and error prone, especially when email threads also
+                      contained replies that were not part of the original onboarding submission.
                     </p>
                   </div>
 
@@ -126,84 +129,127 @@ export default function Synapxe() {
                       <span className="w-8 h-8 bg-[#B3EBF2]/20 rounded-lg flex items-center justify-center">
                         <span className="text-[#B3EBF2] text-sm">3</span>
                       </span>
-                      AWS File Transfers
+                      AWS S3 File Reorganisation
                     </h3>
                     <p className="text-gray-300 text-sm leading-relaxed">
-                      Files needed to be moved across S3 buckets at scale, with no automated way to handle
-                      bulk transfers or track whether each move had succeeded.
+                      As part of the cloud transition, files in AWS S3 needed to be reorganised
+                      based on client requirements. Handling these moves manually would have been
+                      slow and difficult to track at scale, so there was a need for a more
+                      reliable bulk transfer workflow with logging.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Right Column - Contributions */}
             <div className="fade-down fade-down-delay-2">
               <div className="bg-gradient-to-br from-[#3C414A]/40 to-[#3C414A]/20 rounded-2xl p-8 border border-gray-700/20">
                 <h2 className="text-2xl font-bold text-white mb-8 text-center">My Contributions</h2>
 
                 <div className="grid gap-6">
                   <div className="bg-[#1A202C]/50 rounded-xl p-6 border border-gray-700/30">
-                    <h3 className="text-lg font-bold text-white mb-3 flex items-center gap-3">
+                    <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-3">
                       <span className="w-8 h-8 bg-[#B3EBF2]/20 rounded-lg flex items-center justify-center">
                         <span className="text-[#B3EBF2] text-sm">1</span>
                       </span>
-                      UAM Pipeline Redesign
+                      HEALIX UAM Workflow Redesign
                     </h3>
-                    <ul className="space-y-2 text-gray-300 text-sm">
+                    <ul className="space-y-3 text-gray-300 text-sm leading-relaxed">
                       <li className="flex items-start">
                         <span className="text-[#B3EBF2] mr-2 mt-1">•</span>
                         <span>
-                          Consolidated per-application macros into a unified 3-step pipeline (parse → merge/standardise → split)
+                          Redesigned the HEALIX UAM process in Excel VBA so that users no longer
+                          needed to generate standard UAM outputs separately for each application
+                          before merging and splitting them manually.
                         </span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-[#B3EBF2] mr-2 mt-1">•</span>
                         <span>
-                          All Group Name-to-Project and column mappings controlled via Excel sheets — no macro editing needed for routine changes
+                          Introduced configurable Excel sheets for Group Name to Project mapping
+                          and raw to standard column mapping, so routine updates could be made
+                          without editing the macro code.
+                        </span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-[#B3EBF2] mr-2 mt-1">•</span>
+                        <span>
+                          Structured the workflow around four user-facing actions: Run All, Add
+                          Project Field, Merge All, and Split by Project, making the tool easier
+                          to operate and more flexible for day-to-day use.
+                        </span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-[#B3EBF2] mr-2 mt-1">•</span>
+                        <span>
+                          Improved maintainability and scalability by abstracting
+                          application-specific logic away from hardcoded VBA and into
+                          configuration-driven sheets.
                         </span>
                       </li>
                     </ul>
                   </div>
 
                   <div className="bg-[#1A202C]/50 rounded-xl p-6 border border-gray-700/30">
-                    <h3 className="text-lg font-bold text-white mb-3 flex items-center gap-3">
+                    <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-3">
                       <span className="w-8 h-8 bg-[#B3EBF2]/20 rounded-lg flex items-center justify-center">
                         <span className="text-[#B3EBF2] text-sm">2</span>
                       </span>
                       Onboarding Email Parser
                     </h3>
-                    <ul className="space-y-2 text-gray-300 text-sm">
+                    <ul className="space-y-3 text-gray-300 text-sm leading-relaxed">
                       <li className="flex items-start">
                         <span className="text-[#B3EBF2] mr-2 mt-1">•</span>
                         <span>
-                          Built an Excel VBA macro that filters Outlook emails by subject, traverses conversation threads via message IDs to identify the original email, and extracts structured onboarding data into a master Excel sheet
+                          Built an Excel VBA tool to extract structured onboarding data from
+                          FormSG submission emails and populate a master Excel user list.
                         </span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-[#B3EBF2] mr-2 mt-1">•</span>
-                        <span>Eliminated manual email reading and data entry entirely</span>
+                        <span>
+                          Designed the logic to process only the original submission emails while
+                          excluding reply noise within the same email threads.
+                        </span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-[#B3EBF2] mr-2 mt-1">•</span>
+                        <span>
+                          Reduced repetitive manual effort involved in consolidating onboarding
+                          information for users joining the new cloud platform.
+                        </span>
                       </li>
                     </ul>
                   </div>
 
                   <div className="bg-[#1A202C]/50 rounded-xl p-6 border border-gray-700/30">
-                    <h3 className="text-lg font-bold text-white mb-3 flex items-center gap-3">
+                    <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-3">
                       <span className="w-8 h-8 bg-[#B3EBF2]/20 rounded-lg flex items-center justify-center">
                         <span className="text-[#B3EBF2] text-sm">3</span>
                       </span>
-                      AWS S3 File Transfer
+                      AWS S3 Bulk Transfer Automation
                     </h3>
-                    <ul className="space-y-2 text-gray-300 text-sm">
+                    <ul className="space-y-3 text-gray-300 text-sm leading-relaxed">
                       <li className="flex items-start">
                         <span className="text-[#B3EBF2] mr-2 mt-1">•</span>
                         <span>
-                          Wrote a Bash script that takes source and destination locations as input and automates bulk S3 file movements using AWS CLI
+                          Wrote a Bash script using AWS CLI to automate bulk S3 file transfers by
+                          matching source file paths to their destination folders.
                         </span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-[#B3EBF2] mr-2 mt-1">•</span>
-                        <span>Spooled logs for each transfer, enabling post-run auditing and error checking</span>
+                        <span>
+                          Added logging so that transfer activity could be monitored during
+                          execution and reviewed afterwards for auditability and debugging.
+                        </span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-[#B3EBF2] mr-2 mt-1">•</span>
+                        <span>
+                          Reduced manual effort involved in reorganising cloud storage during
+                          platform transition.
+                        </span>
                       </li>
                     </ul>
                   </div>
@@ -226,4 +272,3 @@ export default function Synapxe() {
     </div>
   );
 }
-

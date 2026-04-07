@@ -83,8 +83,12 @@ export default function Work() {
                         <span className="text-[#B3EBF2] text-lg">🧩</span>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-white mb-2">UAM Pipeline Redesign</h4>
-                        <p className="text-gray-300 text-sm leading-relaxed">Consolidated fragmented per-application macros into a <strong className="text-white">unified 3-step configurable workflow</strong>.</p>
+                        <h4 className="font-semibold text-white mb-2">UAM Workflow Redesign</h4>
+                        <p className="text-gray-300 text-sm leading-relaxed">
+                          Redesigned a fragmented UAM generation process for the new HEALIX cloud
+                          platform into a <strong className="text-white">configurable Excel VBA workflow</strong>,
+                          reducing code-level maintenance and manual handling across applications.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -96,7 +100,11 @@ export default function Work() {
                       </div>
                       <div>
                         <h4 className="font-semibold text-white mb-2">Onboarding Automation</h4>
-                        <p className="text-gray-300 text-sm leading-relaxed">Eliminated manual email data entry by building a parser that <strong className="text-white">traverses Outlook threads</strong> and <strong className="text-white">auto-populates Excel</strong>.</p>
+                        <p className="text-gray-300 text-sm leading-relaxed">
+                          Built an <strong className="text-white">Outlook-to-Excel VBA parser</strong> that
+                          converts FormSG onboarding submissions into a structured master user list,
+                          removing repetitive manual consolidation work.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -107,8 +115,12 @@ export default function Work() {
                         <span className="text-[#B3EBF2] text-lg">☁️</span>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-white mb-2">AWS File Transfer Automation</h4>
-                        <p className="text-gray-300 text-sm leading-relaxed">Automated bulk S3 file movements with <strong className="text-white">Bash</strong>, with <strong className="text-white">spooled logging</strong> for auditability.</p>
+                        <h4 className="font-semibold text-white mb-2">AWS S3 Reorganisation Automation</h4>
+                        <p className="text-gray-300 text-sm leading-relaxed">
+                          Automated bulk AWS S3 file reorganisation during cloud transition using
+                          <strong className="text-white">Bash and AWS CLI</strong>, with logging to support
+                          traceability and post-run review.
+                        </p>
                       </div>
                     </div>
                   </div>
